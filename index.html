@@ -41,28 +41,33 @@
 
         let num3 = parseInt(document.getElementById("num3").value)
         
-        let largest;
+        
 
-        if(num1 >=num2   && num1 >= num3){
+        if(num1 >=num2   && num1 >= num3)
+       {
+  
+ document.getElementById("p1").innerHTML = "The largest number is " + num1;
 
-            largest = num1;
         }
         else if(num2 >= num1 && num2 >= num3)
         {
 
-            largest = num2;
+         
+
+
+        document.getElementById("p1").innerHTML = "The largest number is " + num2;            
         }
 
         else
         {
 
-            largest = num3;
+
+
+
+        document.getElementById("p1").innerHTML = "The largest number is " + num3;
         }
 
-        document.getElementById("p1").innerHTML = `The largest number is :${largest}`;
-
-
-        }
+       }
         
 
 
