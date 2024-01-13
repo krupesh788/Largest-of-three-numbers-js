@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
 
-    <h1>Find the Largest Among Three Numbers</h1>
-
+        
+        <h1>Find the Largest Among Three Numbers</h1>
+    
+        <br>
+        <br>
     Enter number 1:
     <input type="text" name="" id="num1">
     <br>
@@ -24,53 +29,14 @@
     <br>
     <br>
 
-    <button  onclick="largest()">Find Largest</button>
+    <button class="btn"  onclick="largest()">Find Largest</button>
+    
+    <br>
+    <br>
 
     <p id="p1"></p>
-
-    <script>
-
-        function largest()
-        {
-
-        
-
-        let num1 = parseInt(document.getElementById("num1").value)
-
-        let num2 = parseInt(document.getElementById("num2").value)
-
-        let num3 = parseInt(document.getElementById("num3").value)
-        
-        let largest;
-
-        if(num1 >=num2   && num1 >= num3){
-
-            largest = num1;
-        }
-        else if(num2 >= num1 && num2 >= num3)
-        {
-
-            largest = num2;
-        }
-
-        else
-        {
-
-            largest = num3;
-        }
-
-        document.getElementById("p1").innerHTML = `The largest number is :${largest}`;
-
-
-        }
-        
-
-
-
-    </script>
     
-
-
-
+</div>
+    <script src="js/script.js"></script>
 </body>
 </html>
